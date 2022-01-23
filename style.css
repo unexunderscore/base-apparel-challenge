@@ -34,7 +34,7 @@ body {
     width: 27.5%;
     margin-top: 4.5%;
     margin-left: 11%;
-    margin-right: 16%;
+    margin-right: 15%;
     
    
 }
@@ -102,6 +102,12 @@ body {
     border-radius: 30px;
     box-shadow: 0 16px 32px 0 rgba(241, 11, 11, 0.2);
     transition: 0;
+}
+
+.email-btn:hover{
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%),hsl(0, 80%, 86%));
+    box-shadow: 0 16px 32px 0 rgba(214, 73, 73, 0.541);
+    transition: 0.3s;
 
 }
 
@@ -114,8 +120,7 @@ body {
 
 #email-input{
     margin-top: 3vw;
-    margin-right: -4vw;
-    border: solid 1px hsla(0, 24%, 67%, 0.507);
+    margin-right: -3vw;
     color: hsla(0, 24%, 67%, 0.959);
     border-radius: 30px;
     padding: 1vw;
@@ -123,6 +128,77 @@ body {
     font-weight: 500;
     width: 88%;
 }
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+.container {
+	overflow: hidden;	
+}
+
+
+.form {
+	padding: 0;	
+    margin: 0;
+}
+
+.form-control {
+    border: none;
+	margin-bottom: 10px;
+    padding-top: 0;
+    padding-left: 0;
+	padding-bottom: 25px;
+	position: relative;
+    width: 100%;
+}
+
+
+.form-control input:focus {
+    border: solid 1px hsla(0, 24%, 67%, 0.507);
+	outline: 0;
+    
+}
+
+.form-control.success input {
+    border: solid 1px hsla(0, 24%, 67%, 0.507);
+}
+
+.form-control.error input {
+    border: solid 3px hsl(0, 93%, 68%);
+	
+}
+
+.form-control i {
+	visibility: hidden;
+	position: relative;
+	top: -5vh;
+	right: -22vw;
+    width: 100%;
+    height: 100%;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+    
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 3rem;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+
 
 
 
