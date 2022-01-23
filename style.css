@@ -1,7 +1,43 @@
+body html {
+    margin:0;
+    padding:0;
+}
+
 body {
     background-color: aqua;
 }
 
 .container{
     display: flex;
+    height: auto;
+    border: 2px solid black;
+    margin: 0;
 }
+
+.main-left {
+   
+}
+
+.main-right {
+    
+    
+}
+
+.hero-img{
+   height: 100%;
+   width: auto;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 1024px) {
+    body {
+      background-color: blue;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+  }
