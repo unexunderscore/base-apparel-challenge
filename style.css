@@ -1,10 +1,13 @@
 body html {
     margin:0;
     padding:0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
-    background-image: linear-gradient(135deg, hsl(0, 0%, 100%),hsl(0, 100%, 98%), hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background-image: 
+                      linear-gradient(135deg, hsl(0, 0%, 100%),hsl(0, 100%, 98%)),
+                      linear-gradient(135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
 }
 
 .container{
@@ -18,9 +21,9 @@ body {
     flex-direction: row;
     background: url(./images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-   
+    background-position: top left;
+    background-size: 58% 100%;
+
 }
 
 .main-left {
@@ -29,6 +32,7 @@ body {
     margin-top: 4%;
     margin-left: 11%;
     margin-right: 15%;
+    
    
 }
 
@@ -49,13 +53,13 @@ body {
 /* On screens that are 1024px or less, set the background color to blue */
 @media screen and (max-width: 1024px) {
     body {
-      background-color: blue;
+      
     }
   }
   
   /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 600px) {
     body {
-      background-color: olive;
+     
     }
   }
