@@ -12,15 +12,22 @@ body {
     height: auto;
     border: 2px solid black;
     margin: 0;
-}
-
-.main-left {
+    height: 80vh;
+    flex-direction: row;
+    background-image: url(./images/bg-pattern-desktop.svg);
    
 }
 
+.main-left {
+   flex: 1 1 auto;
+   width: 70%;
+}
+
 .main-right {
-    
-    
+    text-align: right;
+    align-items: flex-end;
+    flex: 1 1 auto;
+    width: 30%;
 }
 
 .hero-img{
@@ -28,7 +35,7 @@ body {
    width: auto;
 }
 
-/* On screens that are 992px or less, set the background color to blue */
+/* On screens that are 1024px or less, set the background color to blue */
 @media screen and (max-width: 1024px) {
     body {
       background-color: blue;
